@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var contentEngine = require('../public/javascripts/contentEngine')
+var contentEngine = require('../app/contentEngine')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -10,7 +10,8 @@ router.get('/', function(req, res, next) {
 /* GET list of content */
 router.post('/articles/action/:actionId', function(req, res, next) {
   var response = contentEngine.getContentList(req.params.activities, req.params.actionId);
-  res.send(response);
+  console.log(response);
+  res.json(response);
 });
 
 module.exports = router;

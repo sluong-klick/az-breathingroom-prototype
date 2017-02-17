@@ -1,0 +1,83 @@
+[
+	{
+		"id": "1.1",
+		"name": "Email Campaign",
+		"type": "Referring Link"
+	},{
+		"id": "1.2",
+		"name": "Ad Link",
+		"type": "Referring Link"
+	},{
+		"id": "1.3",
+		"name": "FB Link",
+		"type": "Referring Link"
+	},{
+		"id": "1.4",
+		"name": "Direct Link",
+		"type": "Referring Link"
+	},{
+		"id": "1.5",
+		"name": "Paid Search",
+		"type": "Referring Link"
+	},{
+		"id": "1.6",
+		"name": "SMS",
+		"type": "Referring Link"
+	},{
+		"id": "1.7",
+		"name": "Print",
+		"type": "Referring Link"
+	},{
+		"id": "1.8",
+		"name": "Bloggers",
+		"type": "Referring Link"
+	},{
+		"id": "2.1",
+		"name": "Demographic",
+		"type": "External Tracking Data"
+	},{
+		"id": "2.2",
+		"name": "Social Economic",
+		"type": "External Tracking Data"
+	},{
+		"id": "2.3",
+		"name": "Health Profile",
+		"type": "External Tracking Data"
+	},{
+		"id": "2.4",
+		"name": "Responsiveness",
+		"type": "External Tracking Data"
+	},{
+		"id": "2.5",
+		"name": "Digital Consumption",
+		"type": "External Tracking Data"
+	},{
+		"id": "3.1",
+		"name": "Surveys / Registration",
+		"type": "Explicity User Behaviour"
+	},{
+		"id": "3.1.1",
+		"name": "Your Condition (Asthma, COPD,etc)",
+		"type": "Explicity User Behaviour"
+	},{
+		"id": "3.1.2",
+		"name": "Rating Content",
+		"type": "Explicity User Behaviour"
+	},{
+		"id": "3.2",
+		"name": "Polls",
+		"type": "Explicity User Behaviour"
+	},{
+		"id": "4.1.1",
+		"name": "User saw a certain article",
+		"type": "Implicit User Behaviour"
+	},{
+		"id": "4.2",
+		"name": "Aggr Consumption",
+		"type": "Implicit User Behaviour"
+	},{
+		"id": "5.1.1",
+		"name": "Category Listing Page",
+		"type": "Current Page"
+	}
+]

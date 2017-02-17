@@ -1,0 +1,72 @@
+[
+	{
+		"id": "A",
+		"name": "Daily Routine",
+		"sections": [
+			{
+				"id":"A.1",
+				"name":"Personal"
+			},{
+				"id":"A.2",
+				"name":"Career"
+			},{
+				"id":"A.3",
+				"name":"Tech"
+			},{
+				"id":"A.4",
+				"name":"Travel"
+			},{
+				"id":"A.5",
+				"name":"Productivity"
+			},{
+				"id":"A.6",
+				"name":"Daily Living"
+			}
+		]
+	},{
+		"id": "B",
+		"name": "Inspire and Motivate",
+		"sections": [
+			{
+				"id":"B.1",
+				"name":"Quotes"
+			},{
+				"id":"B.2",
+				"name":"Personal Stories"
+			},{
+				"id":"B.3",
+				"name":"Social Community"
+			}
+		]
+	},{
+		"id": "C",
+		"name": "Knowledge",
+		"sections": [
+			{
+				"id":"C.1",
+				"name":"Nutrition"
+			},{
+				"id":"C.2",
+				"name":"Exercising"
+			},{
+				"id":"C.3",
+				"name":"Treatment"
+			},{
+				"id":"C.4",
+				"name":"Environment"
+			}
+		]
+	},{
+		"id": "D",
+		"name": "Taking Action",
+		"sections": [
+			{
+				"id":"D.1",
+				"name":"Talking to Doc"
+			},{
+				"id":"D.2",
+				"name":"Treatment Options"
+			}
+		]
+	}
+]

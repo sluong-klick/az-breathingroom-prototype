@@ -1,10 +1,10 @@
-var _ = require('lodash');
-
 function displayArticles(articles) {
 	$('#heroSection').empty();
 	$('#articleSection').empty();
 
-	_.each(articles, function(article, index) {
+	for (var i=0; i<articles.length; i++) {
+		console.log(articles);
+
 		var articleBlock = (index === 0) ? $('<div class="jumbotron">') : $('<div class="col-xs-6 col-lg-4">');
 		var title = $('<h1>').text(article.title);
 		var description = $('<p>').text(article.description);
@@ -17,7 +17,7 @@ function displayArticles(articles) {
 		} else {
 			articleBlock.appendTo('#articleSection');
 		}
-	});
+	};
 };
 
 function getUpdatedContent(currentActivities) {
