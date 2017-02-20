@@ -1,9 +1,27 @@
 var articles = require('./data/contentArticles');
 
+// var ContentEngine = function () {};
 
-function getContentList(activitiesList, newActivity) {
+function getSortedContentList(activitiesList) {
 
-	activitiesList.push(newActivity);
+	return articles;
 
-	return {activities: activitiesList, articles: articles};
-}
+};
+
+var getContentList = function(activitiesList, newActivity) {
+	if (!activitiesList) {
+		activitiesList = [];
+	}
+
+	if (newActivity) {
+		activitiesList.push(newActivity);
+	}
+
+	var sortedContentList = getSortedContentList(activitiesList);
+
+	return {activities: activitiesList, articles: sortedContentList};
+};
+
+// should be singleton?
+// module.exports = new ContentEngine();
+exports.getContentList = getContentList;

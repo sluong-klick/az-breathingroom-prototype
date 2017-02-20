@@ -14,5 +14,25 @@
 		"title": "Specific Nutrition",
 		"description": "Specific Nutrition... Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
 		"sections": []
+	},{
+		"id": "D.1.a",
+		"title": "Help your child cope with asthma this winter",
+		"description": "Help your child cope... Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
+		"sections": []
+	},{
+		"id": "D.1.b",
+		"title": "The Journey of Having a Child with GERD",
+		"description": "The Journey of Having a Child with GERD... Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
+		"sections": []
+	},{
+		"id": "D.1.c",
+		"title": "Back to School, Back to Asthma Basics",
+		"description": "Back to School, Back to Asthma Basics... Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
+		"sections": []
+	},{
+		"id": "B.1.a",
+		"title": "Setting Your New Year Resolutions: Taking Care of Yourself",
+		"description": "Setting Your New Year Resolutions: Taking Care of Yourself... Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
+		"sections": []
 	}
 ]
