@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/articles/action/:actionId/content/:contentId', function(req, res, next) {
 	var activities = req.body.activities ? JSON.parse(req.body.activities) : null;
-	var response = contentEngine.getContentList(activities, req.params.actionId);
+	var response = contentEngine.getContentList(activities, req.params.actionId, req.params.contentId);
 
 	logger.log("Debug", "Response content", response);
 

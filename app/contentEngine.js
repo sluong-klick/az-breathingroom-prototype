@@ -6,13 +6,13 @@ var articles = require('./data/contentArticles');
 var rulesParser = require('./rulesParser').RulesParser;
 
 
-function getSortedContentList(activitiesList, activityContentId) {
-	//initialize weight on articles list
+function getSortedArticlesList(activitiesList, activityContentId) {
+	//initialize weight to 0 on articles list
 	var articlesList = _.map(articles, function(article) {
 		return new Article(article.id, article.title, article.description, 0);
 	});
 
-	// for each activity item, apply rules to articles list
+	// for each activity item, apply the related rule to articles list
 	_.forEach(activitiesList, function(activity) {
 		articlesList = rulesParser.applyRules(articlesList, activity.id, activityContentId);
 	});
@@ -20,7 +20,7 @@ function getSortedContentList(activitiesList, activityContentId) {
 	return _.orderBy(articlesList, ['weight'], ['desc']);
 };
 
-var getContentList = function(activitiesList, newActivityId) {
+var getContentList = function(activitiesList, newActivityId, newActivityContentId) {
 	if (!activitiesList) {
 		activitiesList = [];
 	}
@@ -30,7 +30,7 @@ var getContentList = function(activitiesList, newActivityId) {
 		activitiesList.push(newActivity);
 	}
 
-	var sortedContentList = getSortedContentList(activitiesList);
+	var sortedContentList = getSortedArticlesList(activitiesList, newActivityContentId);
 
 	return {
 		activities: activitiesList,
