@@ -31,12 +31,12 @@ function getUpdatedContent(path, currentActivities) {
 }
 
 function triggerEmailCampaignActivity() {
-	var currentActivities = JSON.parse(localStorage.getItem("currentActivities"));
+	var currentActivities = localStorage.getItem("azActivities");
 	getUpdatedContent("articles/action/1.1/content/A.1.a", currentActivities);
 }
 
 function triggerAdLinkActivity() {
-	var currentActivities = JSON.parse(localStorage.getItem("currentActivities"));
+	var currentActivities = localStorage.getItem("azActivities");
 	getUpdatedContent("articles/action/1.2/content/A.1", currentActivities);
 }
 
@@ -46,6 +46,6 @@ function resetActivities() {
 
 $(document).ready(function () {
 	// get initial data with existing activities list and no action
-	var currentActivities = JSON.parse(localStorage.getItem("currentActivities"));
+	var currentActivities = localStorage.getItem("azActivities");
 	getUpdatedContent("articles", currentActivities);
 });

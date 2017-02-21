@@ -9,16 +9,21 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/articles/action/:actionId/content/:contentId', function(req, res, next) {
+  var activities = req.body.activities ? JSON.parse(req.body.activities) : null;
+  var response = contentEngine.getContentList(activities, req.params.actionId);
+  
   logger.log("Debug", "Response content", response);
-  var response = contentEngine.getContentList(req.body.activities, req.params.actionId);
-  logger.log("Debug", "Response content", response);
+  
   res.json(response);
 });
 
 /* GET initial list of content */
 router.post('/articles', function(req, res, next) {
-  var response = contentEngine.getContentList(req.body.activities);
+  var activities = req.body.activities ? JSON.parse(req.body.activities) : null;
+  var response = contentEngine.getContentList(activities);
+  
   logger.log("Debug", "Response content", response);
+  
   res.json(response);
 });
 
