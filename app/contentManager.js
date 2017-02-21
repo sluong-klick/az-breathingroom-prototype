@@ -37,13 +37,13 @@ ContentManager.prototype.applyWeightToContent = function(ruleKey, weight) {
 	// apply weight to article, section or category depending on the number of parts in the content Id
 	switch (ruleKeyParts.length) {
 		case 1:
-			this.articles = applyWeightToArticle(this.articles, ruleKey, weight);
+			this.articles = applyWeightToCategory(this.articles, ruleKey, weight);
 			break;
 		case 2:
 			this.articles = applyWeightToSection(this.articles, ruleKey, weight);
 			break;
 		case 3:
-			this.articles = applyWeightToCategory(this.articles, ruleKey, weight);
+			this.articles = applyWeightToArticle(this.articles, ruleKey, weight);
 			break;
 	};
 
