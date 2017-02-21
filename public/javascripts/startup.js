@@ -22,8 +22,12 @@ function displayArticles(articles) {
 
 function getUpdatedContent(path, currentActivities) {
 	var postBody = {"activities": currentActivities};
+
+	console.log("Initiating Request: path=" + path + ", postBody=" + JSON.stringify(postBody, null, 2));
+
 	$.post('http://localhost:3000/' + path, postBody, function(response) {
-	    console.log("Response: " + JSON.stringify(response));
+	    console.log("Response: activities=" + JSON.stringify(response.activities, null, 2));
+	    console.log("Response: articles=" + JSON.stringify(response.articles, null, 2));
 
 	    localStorage.setItem("azActivities", JSON.stringify(response.activities));
 	    displayArticles(response.articles);
@@ -32,12 +36,12 @@ function getUpdatedContent(path, currentActivities) {
 
 function triggerEmailCampaignActivity() {
 	var currentActivities = localStorage.getItem("azActivities");
-	getUpdatedContent("articles/action/1.1/content/A.1.a", currentActivities);
+	getUpdatedContent("articles/action/1.1/content/A.3.a", currentActivities);
 }
 
 function triggerAdLinkActivity() {
 	var currentActivities = localStorage.getItem("azActivities");
-	getUpdatedContent("articles/action/1.2/content/A.1", currentActivities);
+	getUpdatedContent("articles/action/1.2/content/B.2", currentActivities);
 }
 
 function resetActivities() {

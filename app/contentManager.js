@@ -23,15 +23,14 @@ var applyWeightToSection = function(articlesList, sectionId, weight) {
 
 var applyWeightToCategory = function(articlesList, categoryId, weight) {
 	return _.forEach(articlesList, function(article) {
-		if (article.getCategoryId() === sectionId) {
+		if (article.getCategoryId() === categoryId) {
 			article.weight += weight;
 		}
 	});
 };
 
 ContentManager.prototype.applyWeightToContent = function(ruleKey, weight) {
-
-	// parse rule key
+	// parse rule key to determine number of parts
 	var ruleKeyParts = ruleKey.split('.');
 
 	// apply weight to article, section or category depending on the number of parts in the content Id
