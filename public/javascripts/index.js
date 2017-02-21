@@ -26,8 +26,7 @@ function getUpdatedContent(path, currentActivities) {
 	console.log("Initiating Request: path=" + path + ", postBody=" + JSON.stringify(postBody, null, 2));
 
 	$.post('http://localhost:3000/' + path, postBody, function(response) {
-	    console.log("Response: activities=" + JSON.stringify(response.activities, null, 2));
-	    console.log("Response: articles=" + JSON.stringify(response.articles, null, 2));
+	    console.log("Response: " + JSON.stringify(response, null, 2));
 
 	    localStorage.setItem("azActivities", JSON.stringify(response.activities));
 	    displayArticles(response.articles);
