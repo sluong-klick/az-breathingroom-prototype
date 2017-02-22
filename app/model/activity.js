@@ -1,6 +1,5 @@
-var Activity = function(id, groupId, contentId, activityData) {
+var Activity = function(id, contentId, activityData) {
 	this.id = id;
-	this.groupId = groupId || null;
 	this.contentId = contentId || null;
 	this.activityData = activityData || null;
 }
