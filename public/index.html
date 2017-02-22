@@ -69,7 +69,7 @@
             <div class="list-group">
               <a onClick="triggerEmailCampaignActivity();" href="#" class="list-group-item">Email Campaign</a>
               <a onClick="triggerAdLinkActivity();" href="#" class="list-group-item">Ad Link</a>
-              <a href="#" class="list-group-item">Survey</a>
+              <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModalNorm">Survey</a>
               <a onClick="resetActivities();" href="#" class="list-group-item">Reset Activities</a>
             </div>
           </div><!--/.sidebar-offcanvas-->
@@ -83,6 +83,49 @@
       </footer>
 
     </div><!--/.container-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModalNorm" tabindex="-1" role="dialog" 
+         aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" ata-dismiss="modal">
+                      <span aria-hidden="true">&times;</span>
+                      <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        Survey Question
+                    </h4>
+                </div>
+                
+                <!-- Modal Body -->
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label for="contentId">Which condition are you most interested in?</label>
+                    <div class="radio">
+                      <label><input type="radio" name="optradio" id="survey-answer-asthma">Asthma</label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" name="optradio" id="survey-answer-copd">COPD</label>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Cancel
+                    </button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <!-- Bootstrap core JavaScript
