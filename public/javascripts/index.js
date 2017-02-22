@@ -65,6 +65,16 @@ function onClickBehaviousTab() {
 	$('#tab-behaviour').addClass('active');
 };
 
+function onClickSurveySubmit() {
+	var isAsthmaSelected = $('#survey-answer-asthma').val();
+	// var isCOPDSelected = $('#survey-answer-copd').val();
+	var contentId = isAsthmaSelected ? "3.1.1.a" : "3.1.1.b";
+	var path = "articles/action/1.2/content/" + contentId;
+
+	var currentActivities = localStorage.getItem("azActivities");
+	getUpdatedContent(path, currentActivities);
+}
+
 $(document).ready(function() {
 	// get initial data with existing activities list and no action
 	var currentActivities = localStorage.getItem("azActivities");
