@@ -66,7 +66,7 @@ function onClickBehaviousTab() {
 };
 
 function onClickSurveySubmit() {
-	var isAsthmaSelected = $('#survey-answer-asthma').val();
+	var isAsthmaSelected = $('#survey-answer-asthma:checked').val();
 	// var isCOPDSelected = $('#survey-answer-copd').val();
 	var contentId = isAsthmaSelected ? "3.1.1.a" : "3.1.1.b";
 	var path = "articles/action/1.2/content/" + contentId;
